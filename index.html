@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+
+
+</head>
+<body>
+
+
+<div class="main">
+  <div class="container">
+    <div class="left">
+      <div class="box1">
+        <p class="Bill">Bill</p>
+        <div class="input">
+          <img class="dollar" src="images/icon-dollar.png" alt="">
+          <input onkeyup="tatil()" type="number" id="dollar" placeholder="0">
+        </div>
+      </div>
+
+
+      <div class="box2">
+        <p class="Tip">  Select Tip %</p>
+        <div class="text">
+          <div class="row">
+            <button class="btn" onclick="subtractValue(this)" >5%</button>
+            <button class="btn" onclick="subtractValue(this)" >10%</button>
+            <button class="btn" onclick="subtractValue(this)" >15%</button>
+          </div>
+          <div class="row">
+            <button class="btn" onclick="subtractValue(this)" > 25%</button>
+            <button class="btn" onclick="subtractValue(this)" > 50%</button>
+            <input onkeyup="tatil()" type="number" placeholder="Custom" id="Custom">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="input-box">
+        <div>
+          <label for="people">Number of People</label>
+          <p id="warning" style="display: none;">can't be zero</p>
+        </div>
+        <div class="input1">
+          <img src="images/icon-person.png" alt="">
+          <input onkeyup="tatil()" type="number" id="people" min="1" required>
+        </div>
+ 
+      </div>
+
+
+
+    </div>
+    <div class="rigth">
+        <div class="boxtotl1">
+          <div>
+            <p>  Tip Amount</p>
+            <p>  / person</p>
+          </div>
+          <p id="amount">$0.00</p>
+        </div>
+        <div class="boxtotl2">
+          <div>
+            <p>  Total</p>
+            <p>  / person</p>
+          </div>
+          <p id="Total">$0.00</p>
+      </div>
+  
+
+      <button  id="Reset">Reset</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+  
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- onclick="subtractValue(this)" -->
